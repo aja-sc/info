@@ -1,0 +1,190 @@
+/* 全体のスタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* ヘッダー */
+header {
+  background-color: #0066cc;
+  /* メインカラー：青 */
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+}
+
+section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #0066cc;
+  /* メインカラー：青 */
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.2rem;
+  color: #0066cc;
+  /* メインカラー：青 */
+  background-color: #f0f8ff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+/* 練習スケジュール */
+.practice-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.practice-schedule th,
+.practice-schedule td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.practice-schedule th {
+  background-color: #0066cc;
+  /* メインカラー：青 */
+  color: white;
+}
+
+.practice-schedule tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* リスト */
+ul {
+  list-style-type: none;
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #0066cc;
+  /* メインカラー：青 */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* 備考 */
+.practice-notes {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.note {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+/* ユニフォーム色の表示 */
+.uniform-colors {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.color-item {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.color-orange,
+.color-red {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.uniform-image img{
+  width: 100%;
+}
+
+.color-orange {
+  background-color: #ff9933;
+}
+
+.color-red {
+  background-color: #cc0000;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #0066cc;
+  /* メインカラー：青 */
+  color: white;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1.5rem 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 0 1rem 2rem;
+  }
+
+  .practice-schedule table {
+    font-size: 0.9rem;
+  }
+
+  .uniform-colors {
+    flex-direction: column;
+  }
+
+  .color-item {
+    margin-bottom: 0.5rem;
+  }
+}
