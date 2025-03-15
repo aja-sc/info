@@ -61,6 +61,29 @@ h3 {
   border-radius: 4px;
 }
 
+/* 入部届け */
+.entry {
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.entry a {
+  display: inline-block;
+  background-color: #e8422f;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 5px 0px #ae3224;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: translateY(0px);
+}
+
+.entry a:hover {
+  box-shadow: 0 0 0 #ae3224;
+  transform: translateY(5px);
+}
+
 /* 練習スケジュール */
 .practice-schedule table {
   width: 100%;
